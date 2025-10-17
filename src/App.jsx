@@ -3,8 +3,9 @@ import Hero from "./components/Hero"
 import LiquidChrome from "./components/LiquidChrome"
 import Topnav from "./components/Navbars/Topnav"
 import LetterGlitch from "./components/LetterGlitch"
-import About from "./components/About"
+import About from "./components/About/About"
 import Projects from "./components/Projects"
+import Achievements from "./components/Achievements"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Sidenav />
         <Hero />
         <Projects />
+        <Achievements />
 
         {/* <About /> */}
       
