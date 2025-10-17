@@ -6,7 +6,7 @@ const Topnav = () => {
 
 return (
     <>
-        <div className="fixed top-10 w-full flex flex-row items-center justify-around">
+        <div className="fixed top-5 w-full flex flex-row items-center justify-around z-10">
             <GlassSurface
              width={1000} height={70} borderRadius={24} displace={0}>
                 {/* 
