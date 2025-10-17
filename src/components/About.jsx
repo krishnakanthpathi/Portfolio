@@ -1,4 +1,3 @@
-import { Code2, Globe, Database, Layers, GitBranch, Cpu } from "lucide-react";
 import Skills from "./Skills";
 
 const About = () => {
@@ -36,33 +35,7 @@ const About = () => {
           
         </div>
 
-        {/* RIGHT: SKILLS */}
-        {/* <div className="lg:w-1/2 mt-8 lg:mt-0">
-          <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
-            Skills <span className="text-black">& Tools</span>
-          </h3>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
-            {[
-              { icon: <Code2 size={32} />, label: "Java" },
-              { icon: <Cpu size={32} />, label: "Python" },
-              { icon: <Globe size={32} />, label: "JavaScript" },
-              { icon: <Layers size={32} />, label: "React" },
-              { icon: <Database size={32} />, label: "SQL" },
-              { icon: <GitBranch size={32} />, label: "Git" },
-              { icon: <Globe size={32} />, label: "Bootstrap" },
-            ].map((skill, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col items-center p-4 bg-white/10 rounded-xl hover:bg-white/20 transition duration-300"
-              >
-                {skill.icon}
-                <p className="mt-2 font-semibold text-sm sm:text-base">{skill.label}</p>
-              </div>
-            ))}
-          </div>
-        </div> */}
-
+        {/* RIGHT: SKILLS COMPONENT */}
         <Skills />
 
 

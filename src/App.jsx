@@ -5,7 +5,6 @@ import Topnav from "./components/Navbars/Topnav"
 import LetterGlitch from "./components/LetterGlitch"
 import About from "./components/About"
 import Projects from "./components/Projects"
-import Bio from "./components/Bio"
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Topnav />
         <Sidenav />
         <Hero />
-        <Bio />
         <Projects />
 
         {/* <About /> */}
