@@ -6,18 +6,20 @@ import LetterGlitch from "./components/LetterGlitch"
 import About from "./components/About/About"
 import Projects from "./components/Projects"
 import Achievements from "./components/Achievements"
+import Galaxy from "./components/Galaxy"
 
 function App() {
   return (
     <>
       <div className="h-screen fixed w-screen -z-10">
-        <LiquidChrome />
+        {/* <LiquidChrome /> */}
         {/* <LetterGlitch
           glitchSpeed={50}
           centerVignette={true}
           outerVignette={false}
           smooth={true}
         /> */}
+        <Galaxy />
       </div>
         <Topnav />
         <Sidenav />
