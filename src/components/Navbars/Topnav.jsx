@@ -15,7 +15,7 @@ const Topnav = () => {
             </div>
 
             <div className="flex flex-row items-center justify-evenly h-full text-white space-x-1 sm:space-x-2">
-              <a href="#" className="group w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300">
+              <a href="#home" className="group w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300">
                 <div className="w-full h-full rounded-full flex items-center justify-center transition-colors duration-300 group-hover:bg-white">
                   <Home className="w-5 h-5 lg:w-6 lg:h-6 text-white group-hover:text-black transition-colors duration-300" />
                 </div>
@@ -25,7 +25,7 @@ const Topnav = () => {
                   <User className="w-5 h-5 lg:w-6 lg:h-6 text-white group-hover:text-black transition-colors duration-300" />
                 </div>
               </a>
-               <a href="#bio" className="group w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300">
+               <a href="#achievements" className="group w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300">
                 <div className="w-full h-full rounded-full flex items-center justify-center transition-colors duration-300 group-hover:bg-white">
                   <Award className="w-5 h-5 lg:w-6 lg:h-6 text-white group-hover:text-black transition-colors duration-300" />
                 </div>
@@ -35,11 +35,7 @@ const Topnav = () => {
                   <FolderGit2 className="w-5 h-5 lg:w-6 lg:h-6 text-white group-hover:text-black transition-colors duration-300" />
                 </div>
               </a>
-              <a href="#contact" className="group w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300">
-                <div className="w-full h-full rounded-full flex items-center justify-center transition-colors duration-300 group-hover:bg-white">
-                  <Mail className="w-5 h-5 lg:w-6 lg:h-6 text-white group-hover:text-black transition-colors duration-300" />
-                </div>
-              </a>
+              
             </div>
           </div>
         </GlassSurface>

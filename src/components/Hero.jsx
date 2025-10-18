@@ -8,7 +8,6 @@ const Hero = () => {
   return (<>
 
         <Landing />
-        <About />
 
     </>
   );

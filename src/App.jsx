@@ -24,6 +24,7 @@ function App() {
         <Topnav />
         <Sidenav />
         <Hero />
+        <About />
         <Projects />
         <Achievements />
 

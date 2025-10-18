@@ -2,8 +2,8 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const Landing = () => {
     return (<>
-    <div className="hero-container pt-30 w-full h-full flex items-center justify-center">
-      <div className="hero-content w-3/4 h-3/4 shadow-lg bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex flex-col items-center justify-center text-white px-10 py-8">
+    <div id="home" className="hero-container pt-30 w-full h-full flex items-center justify-center">
+      <div className="hero-content w-[95%] sm:w-4/5 md:w-3/4 h-3/4 shadow-lg bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex flex-col items-center justify-center text-white px-6 sm:px-8 md:px-10 py-8">
 
 
         {/* NAME & TITLE */}
