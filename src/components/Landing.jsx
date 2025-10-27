@@ -8,7 +8,7 @@ const Landing = () => {
 
         {/* NAME & TITLE */}
         <h1 className="text-5xl font-extrabold mb-4 text-center">
-          Hi, I'm <span className="text-black">Krishna Kanth</span>
+          Hi, I'm <span className="text-white">Krishna Kanth</span>
         </h1>
         <h2 className="text-2xl font-medium mb-6 text-center">
           Full Stack Developer & Problem Solver

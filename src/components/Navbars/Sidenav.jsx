@@ -1,4 +1,4 @@
-import GlassSurface from "../GlassSurface"
+import GlassSurface from "../Backgrounds/GlassSurface"
 import { Home, User, FolderGit2, Award , ContactIcon} from "lucide-react"
 import { Link } from "react-router-dom"; // Import Link
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link
-import GlassSurface from "../GlassSurface"
+import GlassSurface from "../Backgrounds/GlassSurface"
 import { Home, User, FolderGit2, Mail , Award } from "lucide-react"
 
 // --- Topnav Component ---

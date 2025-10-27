@@ -23,11 +23,11 @@ const AchievementsTimeline = () => {
   ];
 
   return (
-    <div id="achievements" className="hero-container pt-10 w-full h-full flex items-center justify-center">
+    <div id="achievements" className="hero-container pt-30 w-full h-full flex items-center justify-center">
     <div className="hero-content w-[95%] sm:w-4/5 md:w-3/4 h-3/4 shadow-lg bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex flex-col items-center justify-center text-white px-6 sm:px-8 md:px-10 py-8">
         {/* Title */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 text-center">
-            Achievements <span className="text-black"> & Awards</span>
+            Achievements <span className="text-white">&lt;Awards /&gt;</span>
         </h2>
     <div className="relative w-full mt-12">
       {/* The vertical line */}
@@ -38,7 +38,7 @@ const AchievementsTimeline = () => {
           
           {/* Timeline Item Content */}
           <div className={`w-full lg:w-5/12 p-4 bg-white/5 rounded-lg border border-white/10 ${index % 2 === 0 ? 'lg:order-1 lg:text-left' : 'lg:order-3 lg:text-right'}`}>
-            <p className="font-semibold text-black bg-white/80 rounded-full px-3 py-1 inline-block mb-3 text-sm">{item.date}</p>
+            <p className="font-semibold text-white bg-black/50 rounded-full px-3 py-1 inline-block mb-3 text-sm">{item.date}</p>
             <h3 className="text-xl font-bold mb-2">{item.title}</h3>
             <h4 className="text-md font-medium text-gray-300 mb-2">{item.organization}</h4>
             <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
@@ -62,4 +62,3 @@ const AchievementsTimeline = () => {
 };
 
 export default AchievementsTimeline;
-

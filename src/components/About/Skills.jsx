@@ -22,7 +22,7 @@ const Skills = () => {
     // Add w-full here to ensure it takes up available space on small screens
     <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
       <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
-        Skills <span className="text-black">& Tools</span>
+        Skills <span className="text-white">&lt;Tools /&gt;</span>
       </h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
         {skillsList.map((skill, idx) => (

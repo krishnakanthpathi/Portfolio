@@ -30,7 +30,7 @@ const EducationTimeline = () => {
       {/* title */}
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 text-center">
-        Education <span className="text-black">Timeline</span>
+        Education <span className="text-white">&lt;Timeline /&gt;</span>
         </h2>
 
       {/* The vertical line */}
@@ -41,7 +41,7 @@ const EducationTimeline = () => {
           
           {/* Timeline Item Content - Alternating sides on large screens */}
           <div className={`w-full lg:w-5/12 p-4 bg-white/5 rounded-lg border border-white/10 ${index % 2 === 0 ? 'lg:order-1 lg:text-left' : 'lg:order-3 lg:text-right'}`}>
-            <p className="font-semibold text-black bg-white/80 rounded-full px-3 py-1 inline-block mb-3 text-sm">{item.date}</p>
+            <p className="font-semibold text-white bg-black/50 rounded-full px-3 py-1 inline-block mb-3 text-sm">{item.date}</p>
             <h3 className="text-xl font-bold mb-2">{item.degree}</h3>
             <h4 className="text-md font-medium text-gray-300 mb-2">{item.institution}</h4>
             <p className="text-sm text-gray-400 leading-relaxed">{item.description}</p>
@@ -64,4 +64,3 @@ const EducationTimeline = () => {
 };
 
 export default EducationTimeline;
-

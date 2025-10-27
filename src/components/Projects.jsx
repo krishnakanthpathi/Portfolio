@@ -27,14 +27,14 @@ const ProjectsTimeline = () => {
       title: "E-Commerce Mock API",
       description: "Frontend built using JavaScript, HTML, and CSS, integrating mock APIs to simulate product listings and cart functionality.",
       tech: ["JavaScript", "HTML5", "CSS3"],
-      liveLink: "https://github.com/krishnakanthpathi/svln",
-      repoLink: "https://github.com/krishnakanthpathi/svln",
+      liveLink: "httpss://github.com/krishnakanthpathi/svln",
+      repoLink: "httpss://github.com/krishnakanthpathi/svln",
     }
   ];
 
   return (
 
-  <div id="projects" className="hero-container pt-10 w-full h-full flex items-center justify-center">
+  <div id="projects" className="hero-container pt-30 w-full h-full flex items-center justify-center">
 <div className="hero-content w-[95%] sm:w-4/5 md:w-3/4 h-3/4 shadow-lg bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex flex-col items-center justify-center text-white px-6 sm:px-8 md:px-10 py-8">
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 text-center">
       Projects 
@@ -50,7 +50,7 @@ const ProjectsTimeline = () => {
             <p className="text-sm text-gray-400 leading-relaxed mb-4">{item.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {item.tech.map((tech, i) => (
-                <span key={i} className="text-xs text-black bg-white/70 rounded-full px-2 py-1">{tech}</span>
+                <span key={i} className="text-xs text-white bg-black/50 rounded-full px-2 py-1">{tech}</span>
               ))}
             </div>
           </div>
@@ -86,4 +86,3 @@ const ProjectsTimeline = () => {
 };
 
 export default ProjectsTimeline;
-

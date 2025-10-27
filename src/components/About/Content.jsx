@@ -1,5 +1,3 @@
-
-
 const Content = () => {
   return (
     <div className="lg:w-1/2 flex flex-col justify-center">
@@ -11,7 +9,7 @@ const Content = () => {
           </p>
 
           <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
-            I’ve solved over <span className="font-semibold text-black">1000 problems</span> 
+            I’ve solved over <span className="font-semibold text-white">&lt;1000+ problems /&gt;</span> 
             on LeetCode and love applying problem-solving to real-world development.
           </p>
 
