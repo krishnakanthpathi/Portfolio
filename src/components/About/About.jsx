@@ -1,10 +1,43 @@
 import Content from "./Content";
 import Education from "./Education";
 import Skills from "./Skills";
+import { motion } from 'framer-motion'; // Import motion
+
+// --- "SCALE & FADE" ANIMATION VARIANTS ---
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    scale: 0.95, // Start slightly scaled down
+  },
+  in: {
+    opacity: 1,
+    scale: 1, // Animate to full scale
+  },
+  out: {
+    opacity: 0,
+    scale: 0.95, // Scale back down on exit
+  },
+};
+
+// --- TRANSITION ---
+const pageTransition = {
+  type: "tween",
+  ease: "easeIn",
+  duration: 0.3,
+};
+// --- END ANIMATION ---
 
 const About = () => {
   return (
-    <section id="about" className="w-full text-white mt-20">
+    <motion.section 
+      id="about" 
+      className="w-full text-white mt-20"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
     <div className="hero-container pt-10 w-full h-full flex items-center justify-center">
     <div className="hero-content w-[95%] sm:w-4/5 md:w-3/4 h-3/4 shadow-lg bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex flex-col items-center justify-center text-white px-6 sm:px-8 md:px-10 py-8">
 
@@ -32,7 +65,7 @@ const About = () => {
       </p>
         </div>
     </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,4 +1,29 @@
 import { FolderGit2, ExternalLink } from "lucide-react";
+import { motion } from 'framer-motion'; // Import motion
+
+// --- "SCALE & FADE" ANIMATION VARIANTS ---
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    scale: 0.95, // Start slightly scaled down
+  },
+  in: {
+    opacity: 1,
+    scale: 1, // Animate to full scale
+  },
+  out: {
+    opacity: 0,
+    scale: 0.95, // Scale back down on exit
+  },
+};
+
+// --- TRANSITION ---
+const pageTransition = {
+  type: "tween",
+  ease: "easeIn",
+  duration: 0.3,
+};
+// --- END ANIMATION ---
 
 const ProjectsTimeline = () => {
   const projectsData = [
@@ -33,8 +58,15 @@ const ProjectsTimeline = () => {
   ];
 
   return (
-
-  <div id="projects" className="hero-container pt-30 w-full h-full flex items-center justify-center">
+  <motion.div 
+    id="projects" 
+    className="hero-container pt-30 w-full h-full flex items-center justify-center"
+    initial="initial"
+    animate="in"
+    exit="out"
+    variants={pageVariants}
+    transition={pageTransition}
+  >
 <div className="hero-content w-[95%] sm:w-4/5 md:w-3/4 h-3/4 shadow-lg bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex flex-col items-center justify-center text-white px-6 sm:px-8 md:px-10 py-8">
     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 text-center">
       Projects 
@@ -81,7 +113,7 @@ const ProjectsTimeline = () => {
     </div>
 
     </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,10 +1,41 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import { motion } from 'framer-motion'; // Import motion
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    scale: 0.95, // Start slightly scaled down
+  },
+  in: {
+    opacity: 1,
+    scale: 1, // Animate to full scale
+  },
+  out: {
+    opacity: 0,
+    scale: 0.95, // Scale back down on exit
+  },
+};
+
+const pageTransition = {
+  type: "tween",
+  ease: "easeIn",
+  duration: 0.3,
+};
 
 const Landing = () => {
-    return (<>
+    return (
+    // The motion.div wrapper stays the same
+    <motion.div
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
     <div id="home" className="hero-container pt-30 w-full h-full flex items-center justify-center">
       <div className="hero-content w-[95%] sm:w-4/5 md:w-3/4 h-3/4 shadow-lg bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex flex-col items-center justify-center text-white px-6 sm:px-8 md:px-10 py-8">
-
+        
+        {/* ... rest of your component ... */}
 
         {/* NAME & TITLE */}
         <h1 className="text-5xl font-extrabold mb-4 text-center">
@@ -35,7 +66,8 @@ const Landing = () => {
         </div>
         </div>
     </div>
-    </>);
+    </motion.div> // Close motion.div
+    );
 }
  
 export default Landing;
